@@ -17,7 +17,7 @@ class welcome_page extends StatelessWidget {
             )),
             child: Padding(
               padding:
-                  const EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
+                  const EdgeInsets.symmetric(vertical: 0.0, horizontal: 25.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -63,28 +63,33 @@ class welcome_page extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 10.0,
+                    height: 15.0,
                   ),
                   SizedBox(
                     width: double.infinity,
                     height: 60.0,
-                    child: MaterialButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const log_in()));
-                      },
-                      child: Text(
-                        'Sign In',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'Quicksand Bold',
-                          color: Colors.black,
+                    child: Material(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0)),
+                      clipBehavior: Clip.antiAlias,
+                      child: MaterialButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const log_in()));
+                        },
+                        child: Text(
+                          'Sign In',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Quicksand Bold',
+                            color: Colors.black,
+                          ),
                         ),
+                        color: Colors.white,
                       ),
-                      color: Colors.white,
                     ),
                   ),
                   SizedBox(
@@ -102,28 +107,28 @@ class welcome_page extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 10.0,
+                    height: 15.0,
                   ),
                   SizedBox(
                     width: double.infinity,
                     height: 60.0,
-                    child: MaterialButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const log_in()));
-                      },
-                      child: Text(
-                        'Sign Up',
-                        style: TextStyle(
-                          fontFamily: 'Quicksand Bold',
-                          fontSize: 20.0,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
+                    child: Material(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0)),
+                      clipBehavior: Clip.antiAlias,
+                      child: MaterialButton(
+                        onPressed: () {},
+                        child: Text(
+                          'Sign Up',
+                          style: TextStyle(
+                            fontFamily: 'Quicksand Bold',
+                            fontSize: 20.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        color: Colors.white,
                       ),
-                      color: Colors.white,
                     ),
                   ),
                 ],

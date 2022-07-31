@@ -23,7 +23,7 @@ class log_in extends StatelessWidget {
         body: SafeArea(
           child: Padding(
             padding:
-                const EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
+                const EdgeInsets.symmetric(vertical: 0.0, horizontal: 25.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -73,7 +73,7 @@ class log_in extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      right: 15.0,
+                      right: 0.0,
                       bottom: 0.0,
                       child: TextButton(
                         onPressed: () {},
@@ -95,12 +95,7 @@ class log_in extends StatelessWidget {
                   width: double.infinity,
                   height: 60.0,
                   child: MaterialButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const log_in()));
-                    },
+                    onPressed: () {},
                     child: Text(
                       'LOGIN',
                       style: TextStyle(
