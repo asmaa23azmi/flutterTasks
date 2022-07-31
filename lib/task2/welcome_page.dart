@@ -15,57 +15,66 @@ class welcome_page extends StatelessWidget {
               image: AssetImage('images/welcomePage.png'),
               fit: BoxFit.cover,
             )),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'Excited?!',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 40.0,
-                    fontFamily: 'Quicksand Bold',
-                    color: Colors.white,
+            child: Padding(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      'Excited?!',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 40.0,
+                        fontFamily: 'Quicksand Bold',
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 30.0,
-                ),
-                Text(
-                  'You should be!!',
-                  style: TextStyle(
-                    fontFamily: 'Quicksand Bold',
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                  SizedBox(
+                    height: 35.0,
                   ),
-                ),
-                SizedBox(
-                  height: 30.0,
-                ),
-                Text(
-                  'Sign In if you already have an account with us',
-                  style: TextStyle(
-                    fontFamily: 'Quicksand',
-                    color: Colors.white,
-                    fontSize: 14.0,
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      'You should be!!',
+                      style: TextStyle(
+                        fontFamily: 'Quicksand Bold',
+                        fontSize: 30.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 5.0,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    // do something
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const log_in()));
-                  },
-                  child: Container(
-                    margin:
-                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  SizedBox(
+                    height: 35.0,
+                  ),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      'Sign In if you already have an account with us',
+                      style: TextStyle(
+                        fontFamily: 'Quicksand',
+                        color: Colors.white,
+                        fontSize: 14.0,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  SizedBox(
+                    width: double.infinity,
                     height: 60.0,
-                    child: Center(
+                    child: MaterialButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const log_in()));
+                      },
                       child: Text(
                         'Sign In',
                         style: TextStyle(
@@ -75,33 +84,36 @@ class welcome_page extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
+                      color: Colors.white,
                     ),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(30.0)),
-                  ), // ,
-                ),
-                SizedBox(
-                  height: 20.0,
-                ),
-                Text(
-                  'Or sign up if you are new !',
-                  style: TextStyle(
-                    fontFamily: 'Quicksand',
-                    fontSize: 14.0,
-                    color: Colors.white,
                   ),
-                ),
-                SizedBox(
-                  height: 5.0,
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: Container(
-                    margin:
-                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  SizedBox(
+                    height: 30.0,
+                  ),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      'Or sign up if you are new !',
+                      style: TextStyle(
+                        fontFamily: 'Quicksand',
+                        fontSize: 14.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  SizedBox(
+                    width: double.infinity,
                     height: 60.0,
-                    child: Center(
+                    child: MaterialButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const log_in()));
+                      },
                       child: Text(
                         'Sign Up',
                         style: TextStyle(
@@ -111,13 +123,11 @@ class welcome_page extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      color: Colors.white,
                     ),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(30.0)),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
