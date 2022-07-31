@@ -92,6 +92,7 @@ class task1 extends StatelessWidget {
                 Text(
                   'Forgot password?',
                   style: TextStyle(
+                    fontFamily: 'Roboto Regular',
                     color: Colors.grey,
                     fontSize: 14.0,
                   ),
@@ -107,7 +108,7 @@ class task1 extends StatelessWidget {
                   child: Text(
                     "Register Here",
                     style: TextStyle(
-                      fontFamily: 'Open Sans',
+                      fontFamily: 'Roboto Bold',
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0,

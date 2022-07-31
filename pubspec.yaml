@@ -33,16 +33,24 @@ flutter:
 
   # example:
   fonts:
-     - family: Open Sans
+     - family: Roboto Regular
        fonts:
-           - asset: fonts/OpenSans.ttf
+           - asset: fonts/Roboto-Regular.ttf
 
-     - family: Sansita Swashed
+     - family: Roboto Bold
        fonts:
-          - asset: fonts/SansitaSwashed.ttf
+          - asset: fonts/Roboto-Bold.ttf
 
      - family: Poppins
        fonts:
           - asset: fonts/Poppins-Bold.ttf
+
+     - family: Quicksand
+       fonts:
+          - asset: fonts/Quicksand_Book.otf
+
+     - family: Quicksand Bold
+       fonts:
+          - asset: fonts/Quicksand_Bold.otf
 
 
