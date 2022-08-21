@@ -93,6 +93,13 @@ class _login_task3State extends State<login_task3> {
                           ),
                         ],
                       ),
+                      Divider(
+                        height: 5.0,
+                        thickness: 3.0,
+                        color: Colors.black,
+                        indent: 0.0,
+                        endIndent: 218.0,
+                      ),
                       SizedBox(
                         height: 30.0,
                       ),
