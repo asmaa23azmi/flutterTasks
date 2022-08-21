@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import './log_in.dart';
 
-class welcome_page extends StatelessWidget {
-  const welcome_page({Key? key}) : super(key: key);
+class welcome_task2 extends StatelessWidget {
+  const welcome_task2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
