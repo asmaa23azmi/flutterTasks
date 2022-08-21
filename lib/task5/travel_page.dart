@@ -86,8 +86,8 @@ class _travel_pageState extends State<travel_page> {
                       elevation: 3.0,
                       borderRadius: BorderRadius.circular(15.0),
                       child: Container(
-                        width: 317.0,
-                        height: 313.87,
+                        width: 324.0,
+                        height: 315.87,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15.0),
                           color: Colors.white,
@@ -96,13 +96,13 @@ class _travel_pageState extends State<travel_page> {
                           children: [
                             Image(
                               image: AssetImage('images/Mask by Mask.png'),
-                              width: 317.0,
-                              height: 289.24,
+                              width: 324.0,
+                              height: 295.24,
                             ),
                             Positioned(
                               top: 160.0,
                               child: Container(
-                                width: 317.0,
+                                width: 324.0,
                                 height: 289.24,
                                 child: ListTile(
                                   title: Text(
@@ -134,7 +134,7 @@ class _travel_pageState extends State<travel_page> {
                             Positioned(
                               top: 230.0,
                               child: Container(
-                                width: 317.0,
+                                width: 324.0,
                                 height: 289.24,
                                 child: ListTile(
                                   title: Text(
@@ -158,7 +158,7 @@ class _travel_pageState extends State<travel_page> {
                             Positioned(
                               top: 150.0,
                               child: Container(
-                                  width: 317.0,
+                                  width: 324.0,
                                   height: 289.24,
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
