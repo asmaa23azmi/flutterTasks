@@ -67,6 +67,18 @@ class _resert_passwordState extends State<resert_password> {
                             color: Color.fromRGBO(245, 245, 245, 5),
                           ),
                         ),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(28.0),
+                          borderSide: BorderSide(
+                            color: Color.fromRGBO(245, 245, 245, 5),
+                          ),
+                        ),
+                        disabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(28.0),
+                          borderSide: BorderSide(
+                            color: Color.fromRGBO(245, 245, 245, 5),
+                          ),
+                        ),
                         errorBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(28.0),
                           borderSide: BorderSide(
