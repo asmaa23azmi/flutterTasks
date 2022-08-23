@@ -11,8 +11,8 @@ class signup_task4 extends StatefulWidget {
 class _signup_task4State extends State<signup_task4> {
   bool ischecked = false;
   bool ischeck = false;
-  bool isobscure = true;
-  bool _isobscure = true;
+  bool isobscure = false;
+  bool _isobscure = false;
   final _formkey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -134,7 +134,7 @@ class _signup_task4State extends State<signup_task4> {
                                   : Icons.visibility_off),
                             ),
                           ),
-                          obscureText: isobscure,
+                          obscureText: !isobscure,
                           validator: (value) {
                             if (value == null || value.isEmpty) {
                               return 'Please enter some text';
@@ -172,13 +172,8 @@ class _signup_task4State extends State<signup_task4> {
                                   ? Icons.visibility
                                   : Icons.visibility_off),
                             ),
-                            // labelText: 'Password',
-                            // labelStyle: TextStyle(
-                            //     fontSize: 12.0,
-                            //     fontFamily: 'SFProText-Regular',
-                            //     color: Color.fromRGBO(26, 26, 26, 7050)),
                           ),
-                          obscureText: _isobscure,
+                          obscureText: !_isobscure,
                           validator: (value) {
                             if (value == null || value.isEmpty) {
                               return 'Please enter some text';

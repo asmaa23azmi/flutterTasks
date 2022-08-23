@@ -9,7 +9,7 @@ class signin_task4 extends StatefulWidget {
 }
 
 class _signin_task4State extends State<signin_task4> {
-  bool isobscure = true;
+  bool isobscure = false;
   final _formkey = GlobalKey<FormState>();
 
   @override
@@ -116,7 +116,7 @@ class _signin_task4State extends State<signin_task4> {
                               : Icons.visibility_off),
                         ),
                       ),
-                      obscureText: isobscure,
+                      obscureText: !isobscure,
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter some text';

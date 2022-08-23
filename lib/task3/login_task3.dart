@@ -189,7 +189,7 @@ class _login_task3State extends State<login_task3> {
                                     : Icons.visibility_off),
                               ),
                             ),
-                            obscureText: isobscure,
+                            obscureText: !isobscure,
                             validator: (value) {
                               if (value == null || value.isEmpty) {
                                 return 'Please enter some text';
