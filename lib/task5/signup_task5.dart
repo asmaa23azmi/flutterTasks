@@ -65,6 +65,12 @@ class _signup_task5State extends State<signup_task5> {
                                 color: Color.fromRGBO(245, 245, 245, 5),
                               ),
                             ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(245, 245, 245, 5),
+                              ),
+                            ),
                             hintText: 'Name',
                             hintStyle: TextStyle(
                                 fontFamily: 'OpenSans-Regular',
@@ -90,6 +96,12 @@ class _signup_task5State extends State<signup_task5> {
                             filled: true,
                             fillColor: Color.fromRGBO(245, 245, 245, 5),
                             enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(245, 245, 245, 5),
+                              ),
+                            ),
+                            focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(28.0),
                               borderSide: BorderSide(
                                 color: Color.fromRGBO(245, 245, 245, 5),
@@ -122,6 +134,12 @@ class _signup_task5State extends State<signup_task5> {
                             filled: true,
                             fillColor: Color.fromRGBO(245, 245, 245, 5),
                             enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(245, 245, 245, 5),
+                              ),
+                            ),
+                            focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(28.0),
                               borderSide: BorderSide(
                                 color: Color.fromRGBO(245, 245, 245, 5),

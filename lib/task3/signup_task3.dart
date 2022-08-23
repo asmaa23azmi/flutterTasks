@@ -75,6 +75,12 @@ class _signup_task3State extends State<signup_task3> {
                                 color: Color.fromRGBO(70, 244, 60, 5),
                               ),
                             ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(70, 244, 60, 5),
+                              ),
+                            ),
                             hintText: 'Email Address',
                             hintStyle: TextStyle(
                                 fontFamily: 'Poppins-Regular',

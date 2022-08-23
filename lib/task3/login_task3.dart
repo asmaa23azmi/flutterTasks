@@ -32,77 +32,80 @@ class _login_task3State extends State<login_task3> {
             key: _formkey,
             child: ListView(
               children: [
+                const Image(
+                  image: AssetImage('images/vk.png'),
+                  width: 131.0,
+                  height: 131.0,
+                ),
+                SizedBox(
+                  height: 15.0,
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Welcome',
+                    style: TextStyle(
+                      fontSize: 38.0,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 15.0,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Login',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue[900],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 150.0,
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => signup_task3()));
+                      },
+                      child: Text(
+                        'Signup',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Divider(
+                  height: 5.0,
+                  thickness: 4.0,
+                  color: Colors.blue[900],
+                  indent: 0.0,
+                  endIndent: 245.0,
+                ),
+                SizedBox(
+                  height: 30.0,
+                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 23.0, vertical: 20.0),
                   child: Column(
                     children: <Widget>[
-                      const Image(
-                        image: AssetImage('images/vk.png'),
-                        width: 131.0,
-                        height: 131.0,
-                      ),
-                      SizedBox(
-                        height: 15.0,
-                      ),
-                      Text(
-                        'Welcome',
-                        style: TextStyle(
-                          fontSize: 38.0,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 15.0,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              'Login',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.blue[900],
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 150.0,
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => signup_task3()));
-                            },
-                            child: Text(
-                              'Signup',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Divider(
-                        height: 5.0,
-                        thickness: 3.0,
-                        color: Colors.black,
-                        indent: 0.0,
-                        endIndent: 218.0,
-                      ),
-                      SizedBox(
-                        height: 30.0,
-                      ),
                       SizedBox(
                         width: 355.0,
                         height: 56.0,
@@ -115,6 +118,12 @@ class _login_task3State extends State<login_task3> {
                               filled: true,
                               fillColor: Color.fromRGBO(255, 255, 255, 5),
                               enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(5.0),
+                                borderSide: BorderSide(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5.0),
                                 borderSide: BorderSide(
                                   color: Colors.white,
@@ -152,6 +161,12 @@ class _login_task3State extends State<login_task3> {
                               filled: true,
                               fillColor: Color.fromRGBO(255, 255, 255, 5),
                               enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(5.0),
+                                borderSide: BorderSide(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5.0),
                                 borderSide: BorderSide(
                                   color: Colors.white,
@@ -226,7 +241,7 @@ class _login_task3State extends State<login_task3> {
                         child: TextButton(
                           onPressed: () {},
                           child: Text(
-                            'Forgot your password?',
+                            'Forgot password?',
                             style: TextStyle(
                               fontFamily: 'Poppins-Regular',
                               fontSize: 14.0,
@@ -248,7 +263,9 @@ class _login_task3State extends State<login_task3> {
                         height: 30.0,
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           IconButton(
                             onPressed: () {},

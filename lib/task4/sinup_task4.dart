@@ -191,6 +191,7 @@ class _signup_task4State extends State<signup_task4> {
                         height: 20.0,
                       ),
                       Row(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
                           Checkbox(
                             checkColor: Colors.white,
@@ -214,6 +215,8 @@ class _signup_task4State extends State<signup_task4> {
                         ],
                       ),
                       Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Checkbox(
                             checkColor: Colors.white,

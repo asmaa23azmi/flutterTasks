@@ -69,6 +69,12 @@ class _travel_pageState extends State<travel_page> {
                                 color: Colors.white,
                               ),
                             ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Colors.white,
+                              ),
+                            ),
                             hintText: 'Search Your Favourite Place',
                             hintStyle: TextStyle(
                                 fontFamily: 'OpenSans-Regular',

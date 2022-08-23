@@ -61,6 +61,12 @@ class _resert_passwordState extends State<resert_password> {
                             color: Color.fromRGBO(245, 245, 245, 5),
                           ),
                         ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(28.0),
+                          borderSide: BorderSide(
+                            color: Color.fromRGBO(245, 245, 245, 5),
+                          ),
+                        ),
                         hintText: 'Email Address',
                         hintStyle: TextStyle(
                             fontFamily: 'OpenSans-Regular',
