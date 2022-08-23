@@ -71,6 +71,11 @@ class _signin_task4State extends State<signin_task4> {
                     height: 62.82,
                     child: TextFormField(
                       decoration: InputDecoration(
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color.fromRGBO(26, 26, 26, 200),
+                          ),
+                        ),
                         prefixIcon: Icon(Icons.person_outline),
                         // hoverColor: Color.fromRGBO(68, 166, 255, 6),
                         labelText: 'Email',
@@ -97,6 +102,11 @@ class _signin_task4State extends State<signin_task4> {
                     height: 62.82,
                     child: TextFormField(
                       decoration: InputDecoration(
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color.fromRGBO(26, 26, 26, 200),
+                          ),
+                        ),
                         prefixIcon: Icon(Icons.lock_open),
                         // hoverColor: Color.fromRGBO(68, 166, 255, 6),
                         labelText: 'Password',

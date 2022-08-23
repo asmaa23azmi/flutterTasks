@@ -70,6 +70,18 @@ class _signin_task5State extends State<signin_task5> {
                                 color: Color.fromRGBO(245, 245, 245, 5),
                               ),
                             ),
+                            errorBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(245, 245, 245, 5),
+                              ),
+                            ),
+                            focusedErrorBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(245, 245, 245, 5),
+                              ),
+                            ),
                             hintText: 'Email Address',
                             hintStyle: TextStyle(
                                 fontFamily: 'OpenSans-Regular',
@@ -103,6 +115,18 @@ class _signin_task5State extends State<signin_task5> {
                               ),
                             ),
                             focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(245, 245, 245, 5),
+                              ),
+                            ),
+                            errorBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(28.0),
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(245, 245, 245, 5),
+                              ),
+                            ),
+                            focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(28.0),
                               borderSide: BorderSide(
                                 color: Color.fromRGBO(245, 245, 245, 5),

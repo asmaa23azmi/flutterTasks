@@ -89,6 +89,11 @@ class _signup_task4State extends State<signup_task4> {
                         height: 52.82,
                         child: TextFormField(
                           decoration: InputDecoration(
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(26, 26, 26, 200),
+                              ),
+                            ),
                             prefixIcon: Icon(Icons.person_outline),
                             // hoverColor: Color.fromRGBO(68, 166, 255, 6),
                             labelText: 'Email',
@@ -115,6 +120,11 @@ class _signup_task4State extends State<signup_task4> {
                         height: 62.82,
                         child: TextFormField(
                           decoration: InputDecoration(
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(26, 26, 26, 200),
+                              ),
+                            ),
                             prefixIcon: Icon(Icons.lock_open),
                             // hoverColor: Color.fromRGBO(68, 166, 255, 6),
                             labelText: 'Password',
@@ -153,6 +163,11 @@ class _signup_task4State extends State<signup_task4> {
                         height: 62.82,
                         child: TextFormField(
                           decoration: InputDecoration(
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color.fromRGBO(26, 26, 26, 200),
+                              ),
+                            ),
                             prefixIcon: Icon(Icons.lock_open),
                             // hoverColor: Color.fromRGBO(68, 166, 255, 6),
                             hintText: 'Confirm Password',
@@ -186,18 +201,23 @@ class _signup_task4State extends State<signup_task4> {
                         height: 20.0,
                       ),
                       Row(
-                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          Checkbox(
-                            checkColor: Colors.white,
-                            fillColor:
-                                MaterialStateProperty.resolveWith(getColor),
-                            value: ischecked,
-                            onChanged: (bool? value) {
-                              setState(() {
-                                ischecked = value!;
-                              });
-                            },
+                          Transform.scale(
+                            scale: 1.2,
+                            child: Checkbox(
+                              side: BorderSide(
+                                color: Color.fromRGBO(26, 26, 26, 200),
+                              ),
+                              checkColor: Colors.white,
+                              fillColor:
+                                  MaterialStateProperty.resolveWith(getColor),
+                              value: ischecked,
+                              onChanged: (bool? value) {
+                                setState(() {
+                                  ischecked = value!;
+                                });
+                              },
+                            ),
                           ),
                           Text(
                             'Yes, I want to receive promotional emails',
@@ -210,43 +230,85 @@ class _signup_task4State extends State<signup_task4> {
                         ],
                       ),
                       Row(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Checkbox(
-                            checkColor: Colors.white,
-                            fillColor:
-                                MaterialStateProperty.resolveWith(getColor),
-                            value: ischeck,
-                            onChanged: (bool? value) {
-                              setState(() {
-                                ischeck = value!;
-                              });
-                            },
-                          ),
-                          Text(
-                            'I agree with the ',
-                            style: TextStyle(
-                              fontFamily: 'SFProText-Regular',
-                              fontSize: 13.0,
-                              color: Color.fromRGBO(26, 26, 26, 6),
-                            ),
-                          ),
-                          TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              'Terms and Condition',
-                              style: TextStyle(
-                                fontFamily: 'SFProText-Regular',
-                                fontSize: 13.0,
-                                color: Color.fromRGBO(68, 166, 255, 6),
+                          Transform.scale(
+                            scale: 1.2,
+                            child: Checkbox(
+                              side: BorderSide(
+                                color: Color.fromRGBO(26, 26, 26, 200),
                               ),
+                              checkColor: Colors.white,
+                              fillColor:
+                                  MaterialStateProperty.resolveWith(getColor),
+                              value: ischeck,
+                              onChanged: (bool? value) {
+                                setState(() {
+                                  ischeck = value!;
+                                });
+                              },
                             ),
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                height: 16.0,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    'I agree with the ',
+                                    style: TextStyle(
+                                      fontFamily: 'SFProText-Regular',
+                                      fontSize: 13.0,
+                                      color: Color.fromRGBO(26, 26, 26, 6),
+                                    ),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {},
+                                    child: Text(
+                                      'Terms and Condition',
+                                      style: TextStyle(
+                                        fontFamily: 'SFProText-Regular',
+                                        fontSize: 13.0,
+                                        color: Color.fromRGBO(68, 166, 255, 6),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 3.0,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    'and the ',
+                                    style: TextStyle(
+                                      fontFamily: 'SFProText-Regular',
+                                      fontSize: 13.0,
+                                      color: Color.fromRGBO(26, 26, 26, 6),
+                                    ),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {},
+                                    child: Text(
+                                      'Privacy Policy',
+                                      style: TextStyle(
+                                        fontFamily: 'SFProText-Regular',
+                                        fontSize: 13.0,
+                                        color: Color.fromRGBO(68, 166, 255, 6),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         ],
                       ),
                       SizedBox(
-                        height: 30.0,
+                        height: 43.0,
                       ),
                       SizedBox(
                         width: 213.66,
