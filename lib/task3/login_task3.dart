@@ -208,6 +208,8 @@ class _login_task3State extends State<login_task3> {
                         width: 355.0,
                         height: 56.0,
                         child: Material(
+                          shadowColor: Color.fromRGBO(31, 84, 195, 6),
+                          elevation: 3.0,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5.0),
                           ),
